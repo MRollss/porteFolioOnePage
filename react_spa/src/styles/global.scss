@@ -1,0 +1,120 @@
+
+@font-face {
+    src: url(fonts/LEMONMILK-Regular.otf);
+    font-family: "LemonMilk-regular";
+}
+@font-face {
+    src: url(fonts/LEMONMILK-Bold.otf);
+    font-family: "LemonMilk-bold";
+}
+
+$main-color: #37474F;
+
+h1{
+    font-family: 'LemonMilk-bold';
+    font-size: 25px;
+}
+p{
+    font-family: 'LemonMilk-regular';
+    font-size: 20px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+.name p{
+    color: $main-color;
+}
+ul li a{
+    color: #fff;
+}
+.icon{
+    fill: $main-color;
+    width: 48px;
+    height: 48px;
+    margin-right: 25px;
+    margin-top: 27px;
+}
+.cat{
+    width: 680px;
+    border-bottom: 1px solid #fff;
+    margin-bottom:  80px;
+}
+
+.main{
+    margin-left: 55px;
+    color: $main-color;
+}
+button{
+    border: none;
+}
+.left{
+    position: fixed;
+    float: left;
+    height: 100%;
+    width: 30%;
+    top: 0px;
+}
+.name p{
+    position: relative;
+    top: 60px;
+    font-family: 'LemonMilk-bold';
+    font-size: 50px;
+}
+.contact{ 
+    position: fixed;
+    bottom: 80px;
+}
+.info{
+    margin-bottom: 20px;
+}
+.container{
+    text-align: center;
+    margin-top: 50vh; 
+    transform: translateY(-50%);
+}
+
+li{
+    font-size: 50px;
+    font-family: 'LemonMilk-bold';
+}
+
+.btn{
+    font-family: 'LemonMilk-bold';
+    font-size: 30px;
+    height: 90px;
+    width: 320px;
+    background-color: $main-color;
+    color: #fff;
+    cursor: pointer;
+}
+.btn:hover{
+    color: $main-color;
+    background-color: #fff;
+    border: solid 5px $main-color ;
+    transition: 0.4s;
+}
+#menu{
+    position: fixed;
+    right: 0px;
+    background-color: $main-color;
+    height: 100%;
+    width: 1190px;
+    top: 0px;
+}
+#burger{
+    margin-top: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+.selection{
+    color: #fff;
+    font-family: 'LemonMilk-regular';   
+}
+.content{
+    background-color: red;
+
+}

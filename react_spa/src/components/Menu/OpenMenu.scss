@@ -1,0 +1,45 @@
+.openMenu{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index:100;
+}
+.drawer{
+    position: fixed;
+    right: 0px;
+    background-color: #37474F;
+    width: 245px;
+    height: 100%;
+    top: 0px;
+    z-index:100;
+    display: flex;
+    align-items: center;
+
+    animation: slideDrawer 0.3s forwards;
+}
+.open .line{
+    width: 137px;
+}
+@keyframes slideDrawer{
+    100%{
+        width: 50%;
+    }
+}
+
+//---- RESPONSIVE ----
+
+//Smartphone
+@media screen and (max-width: 1300px) {
+    .openMenu{
+        z-index: 999;
+    }
+    @keyframes slideDrawer{
+        100%{
+            width: 100%;
+        }
+    }
+    
+    }
+
+

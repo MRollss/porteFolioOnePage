@@ -12,11 +12,11 @@ $main-color: #37474F;
 
 h1{
     font-family: 'LemonMilk-bold';
-    font-size: 25px;
+    font-size: 20px;
 }
 p{
     font-family: 'LemonMilk-regular';
-    font-size: 20px;
+    font-size: 15px;
 }
 
 *{
@@ -28,9 +28,6 @@ p{
 .name p{
     color: $main-color;
 }
-ul li a{
-    color: #fff;
-}
 .icon{
     fill: $main-color;
     width: 48px;
@@ -38,12 +35,6 @@ ul li a{
     margin-right: 25px;
     margin-top: 27px;
 }
-.cat{
-    width: 680px;
-    border-bottom: 1px solid #fff;
-    margin-bottom:  80px;
-}
-
 .main{
     margin-left: 55px;
     color: $main-color;
@@ -55,33 +46,31 @@ button{
     position: fixed;
     float: left;
     height: 100%;
-    width: 30%;
+    width: 350px;
     top: 0px;
+    z-index: 200;
 }
 .name p{
-    position: relative;
+    position: fixed;
     top: 60px;
     font-family: 'LemonMilk-bold';
-    font-size: 50px;
+    font-size: 40px;
 }
 .contact{ 
     position: fixed;
     bottom: 80px;
+    width: 300px;
 }
 .info{
     margin-bottom: 20px;
 }
 .container{
     text-align: center;
-    margin-top: 50vh; 
-    transform: translateY(-50%);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-
-li{
-    font-size: 50px;
-    font-family: 'LemonMilk-bold';
-}
-
 .btn{
     font-family: 'LemonMilk-bold';
     font-size: 30px;
@@ -90,31 +79,261 @@ li{
     background-color: $main-color;
     color: #fff;
     cursor: pointer;
+    border: solid 5px $main-color ;
+    transition: 0.5s;
+}
+.btn a{
+    color: #fff;
+}
+.btn:hover a{
+    color: $main-color;
+}
+.btn:active, .btn:focus{
+    outline-style:none;
 }
 .btn:hover{
     color: $main-color;
     background-color: #fff;
-    border: solid 5px $main-color ;
-    transition: 0.4s;
+    transition: 0.5s;
 }
-#menu{
-    position: fixed;
-    right: 0px;
-    background-color: $main-color;
-    height: 100%;
-    width: 1190px;
-    top: 0px;
-}
-#burger{
-    margin-top: 60px;
-    text-align: center;
-    cursor: pointer;
-}
-.selection{
-    color: #fff;
-    font-family: 'LemonMilk-regular';   
-}
-.content{
-    background-color: red;
 
+//Les contenus
+
+.full_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%, -40%);
+    animation: SlideFromBottom 0.5s forwards;
+}
+.graphs{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-40%, -50%);
+}
+.date{
+    border: solid 4px $main-color;
+    float: left;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    margin-right: 35px;
+}
+.date_txt{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+//Left bar
+.left_bar{
+    float: left;
+    margin-right: 100px;
+}
+.bar{
+    background-color: $main-color;
+    width: 5px; 
+}
+.long_bar{
+    height: 77vh;
+}
+.small_bar{
+    height: 20px;
+    margin-bottom: 1vh;
+}
+
+//page Ecole
+.ecole{
+    font-size: 15px;
+    margin-bottom: 15vh;
+}
+h2{
+    font-family: "LemonMilk-regular";
+}
+h3{
+    font-family: "LemonMilk-bold";
+}
+
+//page Expériences professionelles
+
+.expPro{
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 15vh;
+}
+
+@keyframes SlideFromBottom{
+    0%{
+        margin-top: 100%;
+    }
+}
+
+//page Mes Travaux
+
+.lien_cat{
+    font-family: "LemonMilk-bold";
+    font-size: 20px;
+    color: $main-color;
+    border-right: $main-color 2px solid;
+    margin-right: 5%;
+    padding-right: 5%;
+}
+
+//---- RESPONSIVE ----
+
+//Smartphone
+@media screen and (max-width: 1300px) {
+    .maTete{
+        display: none;
+    }
+    .left{
+        z-index: 0;
+    }
+    h1{
+        font-size: 15px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .main{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .name p{
+        top: 30px;
+        font-size: 25px;
+    }
+    .contact{
+        position: fixed;
+        bottom: 20px;
+        width: 100%;
+        float: left;
+        height: 70px;
+    }
+    .info{
+        margin-bottom: 0px;
+    }
+    .contact_right{
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+        width: 150px;
+    }
+    .icon{
+        width: 28px;
+        height: 28px;
+        margin-top: 7px;
+    }
+    // PAGES
+
+    .container{
+        z-index: 50;
+    }
+    .container ul li{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .full_content{
+        margin: 0px;
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .graphs{
+        transform: translate(-50%, -40%);
+    }
+
+    .left_bar{
+        float: left;
+        margin-right: 10px;
+        display: none;
+    }
+    .bar{
+        background-color: $main-color;
+        width: 5px; 
+    }
+    .long_bar{
+        height: 100px;
+    }
+    .small_bar{
+        height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .date{
+        width: auto;
+        float: none;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        margin-right: 7px;
+        margin-bottom: 10px;
+    }
+    .date_txt{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .ecole{
+        font-size: 10px;
+        margin-bottom: 25px;
+    }
+    .expPro{
+        font-size: 10px;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-height: 650px) {
+    .full_content{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .date h3{
+        font-size: 10px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    .date{
+        border: 2px solid;
+    }
+    .full_content h2{
+        font-size: 12px;
+    }
+    .full_content h3{
+        font-size: 10px;
+    }
+    .info h1{
+        font-size: 12px;
+    }
+    .name p{
+        font-size: 20px;
+    }
+    .line{
+        height: 5px;
+        margin-bottom: 10px;
+        width: 100px;
+    }
+    .open .line{
+        width: 100px;
+    }
+    li{
+        font-size: 20px;
+        padding-bottom: 7px!important;
+    }
+    .btn{
+        font-size: 20px;
+        border: solid 3px $main-color;
+        width: 200px;
+    }
 }

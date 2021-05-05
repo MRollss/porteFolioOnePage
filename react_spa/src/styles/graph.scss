@@ -1,0 +1,53 @@
+.Graph{
+    height: 25px;
+    margin-bottom: 5%;
+    margin-top: 5px;
+    border-radius: 38px;
+    animation: growUp 2s forwards;
+}
+
+.html{
+    background-color: #FF5757;
+    width :60%;
+}
+.css{
+    background-color: #5271FF;
+    width :60%;
+}
+.js{
+    background-color: #FFDE59;
+    width :20%;
+}
+.photoshop{
+    background-color: #001D34;
+    width :50%;
+}
+.illustrator{
+    background-color: #330000;
+    width :55%;
+}
+.xd{
+    background-color: #470137;
+    width :58%;
+}
+
+@keyframes growUp{
+    0%{
+        width: 0%;
+        transform: rotateX(180deg);
+    }
+}
+
+//---- RESPONSIVE ----
+
+//Smartphone et lowRes
+@media screen and (max-width: 1300px) {
+    
+    .Graph{
+        height: 10px;
+        margin-bottom: 2vh;
+    }
+    .graphs h3{
+        font-size: 15px;
+    }
+}

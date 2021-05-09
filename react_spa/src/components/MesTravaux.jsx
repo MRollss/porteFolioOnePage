@@ -39,35 +39,35 @@ class MesTravaux extends Component {
         </div>
         <div className="full_content_travaux">
           <div className="travaux">
-              <div  className="lien_cat"><a href="https://drive.google.com/file/d/1AZhxM7VYNGovpenVr9iy3M-p1qSQUCRr/view?usp=sharing">FoodApp</a></div>
+              <div  className="lien_cat"><a href="https://drive.google.com/file/d/1AZhxM7VYNGovpenVr9iy3M-p1qSQUCRr/view?usp=sharing" target="_blank" rel="noreferrer">FoodApp</a></div>
                 <div className="img_travaux appfood">
-                  <img src={appfood1}></img>
-                  <img src={appfood2}></img>
-                  <img src={appfood3}></img>
-                  <img src={appfood4}></img>
+                  <img src={appfood1} alt="appfood"></img>
+                  <img src={appfood2} alt="appfood"></img>
+                  <img src={appfood3} alt="appfood"></img>
+                  <img src={appfood4} alt="appfood"></img>
                 </div>
-              <div className="lien_cat"><a href="https://drive.google.com/file/d/1rFnpxudYeswkrBqZmVNt8j_Xdy-N7Gu5/view?usp=sharing">Zao Makeup</a></div>
+              <div className="lien_cat"><a href="https://drive.google.com/file/d/1rFnpxudYeswkrBqZmVNt8j_Xdy-N7Gu5/view?usp=sharing" target="_blank" rel="noreferrer">Zao Makeup</a></div>
               <div className="img_travaux zao">
-                  <img src={zao1}></img>
-                  <img src={zao2}></img>
-                  <img src={zao3}></img>
-                  <img src={zao4}></img>
-                  <img src={zao5}></img>
-                  <img src={zao6}></img>
+                  <img src={zao1} alt="site Zao"></img>
+                  <img src={zao2} alt="site Zao"></img>
+                  <img src={zao3} alt="site Zao"></img>
+                  <img src={zao4} alt="site Zao"></img>
+                  <img src={zao5} alt="site Zao"></img>
+                  <img src={zao6} alt="site Zao"></img>
                 </div>
-              <div className="lien_cat"><a href="https://www.brocaou.com/" target="_blank">Brocaou - Visitez Brocaou.com</a></div>
+              <div className="lien_cat"><a href="https://www.brocaou.com/" target="_blank" rel="noreferrer">Brocaou - Visitez Brocaou.com</a></div>
               <div className="img_travaux brocaou">
-                  <img src={logoBrocaou}></img>
+                  <img src={logoBrocaou} alt="logos Brocaou"></img>
               </div>
-              <div className="lien_cat"><a href="https://drive.google.com/file/d/1KA7S2L4Op9-wp5Blj9zJ-ZFoYAydqRAh/view?usp=sharing" target="_blank">SeanBin Project</a></div>
+              <div className="lien_cat"><a href="https://drive.google.com/file/d/1KA7S2L4Op9-wp5Blj9zJ-ZFoYAydqRAh/view?usp=sharing" target="_blank" rel="noreferrer">SeanBin Project</a></div>
               <div className="img_travaux SeanBin">
-                  <img src={SeanBin}></img>
+                  <img src={SeanBin} alt="SeanBin"></img>
               </div>
-              <div className="lien_cat"><a href="https://drive.google.com/file/d/17h1bzM4ovjMuf1TBZYYxHb2MJvIcEXYQ/view?usp=sharing" target="_blank">Newsletter Disney</a></div>
+              <div className="lien_cat"><a href="https://drive.google.com/file/d/17h1bzM4ovjMuf1TBZYYxHb2MJvIcEXYQ/view?usp=sharing" target="_blank" rel="noreferrer">Newsletter Disney</a></div>
               <div className="img_travaux disney">
-                  <img src={Disney}></img>
+                  <img src={Disney} alt="Disney"></img>
               </div>
-              <button className="btn"><a href="https://drive.google.com/drive/folders/1O9qsOOZVf2eW7kPr6inzaC372seLCq1m?usp=sharing" target="_blank" >Voir d'autre travaux</a></button> 
+              <button className="btn"><a href="https://drive.google.com/drive/folders/1O9qsOOZVf2eW7kPr6inzaC372seLCq1m?usp=sharing" target="_blank" rel="noreferrer" >Voir d'autre travaux</a></button> 
           </div>
         </div>
       </div>

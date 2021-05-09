@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import {
     Route,
     NavLink,
-    HashRouter
+    HashRouter,
+    Redirect
   } from "react-router-dom";
 import Home from "./Home";
 import Ecole from "./Ecole";
@@ -51,6 +52,9 @@ class Main extends Component {
                     </NavLink>
                 </div>
                 <div className="content">
+                    <Route exact path="/">
+                        <Redirect to="/home" />
+                    </Route>
                     <Route path="/home" component={Home}/>
                     <Route path="/ecole" component={Ecole}/>
                     <Route path="/expPro" component={ExpPro}/>

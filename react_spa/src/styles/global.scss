@@ -112,6 +112,7 @@ button{
     width: 60%;
     position: absolute;
     left: 50%;
+    overflow: auto!important;
     transform: translateX(-50%);
     animation: SlideFromBottom 0.5s forwards;
 }
@@ -333,7 +334,7 @@ h3{
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        overflow: auto;
+        overflow: auto!important;
         height: 60vh;
         width: 90%;
     }

@@ -5,6 +5,14 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Antoine Bocourt</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png">
+    <link rel="icon" href="%PUBLIC_URL%/favicon.icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png">
+    <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest">
+    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff"> 
   </head>
   <body>
     <div class="preloader">
@@ -18,9 +26,10 @@
         padding: 0;
         position: absolute;
         top: 0;
+        left: 0;
         z-index: 900;
         width: 100%;
-        height: 100vh;
+        height: 99vh;
         background-color: #fff;
         animation: load 2.5s forwards;
         border-bottom: #37474F 5px solid;
@@ -34,11 +43,11 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-100%);
-        font-size: 500%;
+        font-size: 350%;
       }
       @keyframes load {
         30%{
-          height: 100%;
+          height: 99vh;
         }
         100% {
           height: 0;

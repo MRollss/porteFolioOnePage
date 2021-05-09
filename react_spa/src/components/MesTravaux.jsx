@@ -67,7 +67,7 @@ class MesTravaux extends Component {
               <div className="img_travaux disney">
                   <img src={Disney}></img>
               </div>
-              <button className="btn"><a href="https://drive.google.com/file/d/1x55kLxgmyrhoPPgb0hS-KuLn622eJqEu/view?usp=sharing" target="_blank" >Voir d'autre travaux</a></button> 
+              <button className="btn"><a href="https://drive.google.com/drive/folders/1O9qsOOZVf2eW7kPr6inzaC372seLCq1m?usp=sharing" target="_blank" >Voir d'autre travaux</a></button> 
           </div>
         </div>
       </div>

@@ -104,7 +104,15 @@ button{
     top: 50%;
     left: 50%;
     width: 60%;
-    transform: translate(-50%, -40%);
+    transform: translate(-40%, -40%);
+    animation: SlideFromBottom 0.5s forwards;
+}
+.full_content_travaux{
+    margin: 0px;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     animation: SlideFromBottom 0.5s forwards;
 }
 .graphs{
@@ -123,8 +131,8 @@ button{
     margin-right: 35px;
 }
 .date_txt{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     font-size: 15px;
 }
 
@@ -138,7 +146,7 @@ button{
     width: 5px; 
 }
 .long_bar{
-    height: 77vh;
+    height: 74vh;
 }
 .small_bar{
     height: 20px;
@@ -174,13 +182,42 @@ h3{
 //page Mes Travaux
 
 .lien_cat{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.lien_cat a{
     font-family: "LemonMilk-bold";
     font-size: 20px;
     color: $main-color;
-    border-right: $main-color 2px solid;
-    margin-right: 5%;
-    padding-right: 5%;
 }
+.img_travaux{
+    margin-bottom: 40px;
+}
+.travaux .btn{
+    margin: auto;
+    width: 100%;
+    margin-bottom: 50px;
+}
+//img travaux
+.appfood img{
+    height: 400px;
+    margin-right: 2%;
+}
+.zao img{
+    height: 300px;
+    margin-right: 2%;
+}
+.brocaou img{
+    width: 70%;
+}
+.SeanBin img{
+    width: 100%;
+}
+.disney img{
+    width: 100%;
+}
+
 
 //---- RESPONSIVE ----
 
@@ -291,6 +328,36 @@ h3{
         font-size: 10px;
         margin-bottom: 25px;
     }
+    //Taille des travaux
+    .full_content_travaux{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        overflow: auto;
+        height: 60vh;
+        width: 90%;
+    }
+    .lien_cat{
+        margin-top: 0px;
+    }
+    .appfood img{
+        height: 450px;
+        margin-right: 1%;
+    }
+    .zao img{
+        height: 200px;
+        margin-right: 1%;
+    }
+    .brocaou img{
+        width: 90%;
+    }
+    .SeanBin img{
+        width: 100%;
+    }
+    .disney img{
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-height: 650px) {
